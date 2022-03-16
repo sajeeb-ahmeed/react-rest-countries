@@ -9,13 +9,22 @@ const obi = {
 
 }
 const styleadd = {
-  color: 'red',
-  backgroundColor: 'yellow'
+  color: 'white',
+  backgroundColor: 'purple',
+  padding: '20px'
 }
+
+const singers = [
+  { name: ' Dr. Mahfuz', job: 'Doctor' },
+  { name: ' Dr. Ahun', job: 'Singer' },
+  { name: ' Dr. Jhatka', job: 'Scientist' },
+  { name: ' Dr. Kibria', job: 'RJ' },
+]
 function App() {
+  const arr = ['sajeeb', 'jhankar', 'hero', 'riaz', 'razzak'];
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>JSX</h2>
         <div className="container">
@@ -23,20 +32,45 @@ function App() {
           <p style={{ color: 'blue', backgroundColor: 'green', padding: '20px' }}> {obi.name} {obi.job}</p>
           <p> {obi.name} {obi.job}</p>
         </div>
-        <p>
-          cEdit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+       
+      
+      </header> */}
+      {
+        arr.map(nayok => <li>{nayok}</li>)
+      }
+      {
+        // arr.map(nayok => <Person name={nayok}></Person>)
+      }
+      {
+        singers.map(singer => <Person name={singer.name} job={singer.job}></Person>)
+      }
+
+      <Info pro=" Cute Coupple"></Info>
+      <Info pro="Paddha Nodir Majhi"></Info>
+      <Info pro="HARDWORK"></Info>
+
+    </div >
   );
 }
 
+function Person(props) {
+
+  return (
+
+    <div className='person'>
+      <h1> Name:{props.name} </h1>
+      <h3> job :{props.job} </h3>
+
+    </div>
+
+  )
+}
+function Info(props) {
+  return (
+
+    <div style={styleadd}>
+      <h4>Profession : {props.pro} </h4>
+    </div>
+  )
+}
 export default App;

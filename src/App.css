@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.person{
+  background-color: rgb(246, 189, 189);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+}
