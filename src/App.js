@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 const names = ' SaJeeb AHmeed ';
 const age = 25;
@@ -36,7 +37,7 @@ function App() {
       
       </header> */}
       {
-        arr.map(nayok => <li>{nayok}</li>)
+        // arr.map(nayok => <li>{nayok}</li>)
       }
       {
         // arr.map(nayok => <Person name={nayok}></Person>)
@@ -45,9 +46,14 @@ function App() {
         singers.map(singer => <Person name={singer.name} job={singer.job}></Person>)
       }
 
-      <Info pro=" Cute Coupple"></Info>
+      {/* <Info pro=" Cute Coupple"></Info> */}
       <Info pro="Paddha Nodir Majhi"></Info>
       <Info pro="HARDWORK"></Info>
+
+      <Count> </Count>
+
+
+
 
     </div >
   );
@@ -73,4 +79,31 @@ function Info(props) {
     </div>
   )
 }
+
+function Count(props) {
+  const [count, setCount] = useState(0);
+
+  // const incarase = () => {
+  //   const newCount = count + 1;
+  //   setCount(newCount);
+  // }
+  const incarase = () => setCount(count + 1);
+  const decarase = () => {
+    if (count > 0) {
+      setCount(count - 1)
+    }
+  };
+
+  return (
+
+    <div>
+
+      <h3>Count : {count} </h3>
+      <button onClick={incarase}>Incarse</button>
+      <button onClick={decarase}>Decarse</button>
+    </div>
+  )
+}
+
+
 export default App;
