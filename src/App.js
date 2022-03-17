@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import ExternalUsers from './externalUsers/ExternalUsers';
+import Header from './header/Header';
 
 const names = ' SaJeeb AHmeed ';
 const age = 25;
@@ -51,6 +53,7 @@ function App() {
       <Info pro="HARDWORK"></Info> */}
 
       {/* <Count> </Count> */}
+      <Header></Header>
       <ExternalUsers></ExternalUsers>
 
 
@@ -60,7 +63,7 @@ function App() {
   );
 }
 
-function Person(props) {
+/* function Person(props) {
 
   return (
 
@@ -79,8 +82,8 @@ function Info(props) {
       <h4>Profession : {props.pro} </h4>
     </div>
   )
-}
-
+} */
+/* 
 function Count(props) {
   const [count, setCount] = useState(0);
 
@@ -104,10 +107,10 @@ function Count(props) {
       <button onClick={decarase}>Decarse</button>
     </div>
   )
-}
+} */
 
 
-
+/* 
 function ExternalUsers() {
   const [users, setUsers] = useState([]);
   // useEffect( ()=>{}, [])
@@ -138,6 +141,6 @@ function User(props) {
       <p>Email: {props.email}</p>
     </div>
   )
-}
+} */
 
 export default App;
