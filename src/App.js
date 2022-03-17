@@ -91,12 +91,7 @@ function Count(props) {
   //   const newCount = count + 1;
   //   setCount(newCount);
   // }
-  const incarase = () => setCount(count + 1);
-  const decarase = () => {
-    if (count > 0) {
-      setCount(count - 1)
-    }
-  };
+ 
 
   return (
 
