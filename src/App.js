@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
 import ExternalUsers from './externalUsers/ExternalUsers';
 import Header from './header/Header';
+import Countries from './Components/countries/Countries';
 
 const names = ' SaJeeb AHmeed ';
 const age = 25;
@@ -55,6 +57,7 @@ function App() {
       {/* <Count> </Count> */}
       <Header></Header>
       <ExternalUsers></ExternalUsers>
+      <Countries></Countries>
 
 
 
