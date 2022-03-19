@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import ExternalUsers from './externalUsers/ExternalUsers';
 import Header from './header/Header';
 import Countries from './Components/countries/Countries';
+import Footer from './dist/footer/Footer';
 
 const names = ' SaJeeb AHmeed ';
 const age = 25;
@@ -59,7 +60,7 @@ function App() {
       <ExternalUsers></ExternalUsers>
       <Countries></Countries>
 
-
+      <Footer></Footer>
 
 
     </div >
