@@ -1,319 +1,36 @@
-const cosmeteis = [
-    [
-        {
-            "_id": "623804f3172a85a0c3c20860",
-            "index": 0,
-            "guid": "5306f82e-811b-4545-a651-411b7915b8bc",
-            "isActive": false,
-            "balance": "$1,474.66",
-            "picture": "http://placehold.it/32x32",
-            "age": 32,
-            "eyeColor": "green",
-            "name": "Spencer Schwartz",
-            "gender": "male",
-            "company": "STUCCO",
-            "email": "spencerschwartz@stucco.com",
-            "phone": "+1 (824) 400-3722",
-            "address": "378 Malta Street, Gloucester, Illinois, 2590",
-            "about": "Minim eu excepteur irure amet incididunt do in ullamco commodo ut cillum eu fugiat. Lorem do dolor sunt cillum ipsum commodo quis. Aliquip nostrud duis elit id est Lorem id anim velit excepteur et. Excepteur sunt duis non nisi Lorem occaecat veniam fugiat sint eu cupidatat et ad.\r\n",
-            "registered": "2014-04-03T09:46:01 -06:00",
-            "latitude": -40.181653,
-            "longitude": -20.935342,
-            "tags": [
-                "Lorem",
-                "proident",
-                "ex",
-                "aute",
-                "sint",
-                "nulla",
-                "minim"
-            ],
-            "friends": [
-                {
-                    "id": 0,
-                    "name": "Patrica Sharp"
-                },
-                {
-                    "id": 1,
-                    "name": "Lisa Griffith"
-                },
-                {
-                    "id": 2,
-                    "name": "Alicia Duncan"
-                }
-            ],
-            "greeting": "Hello, Spencer Schwartz! You have 9 unread messages.",
-            "favoriteFruit": "strawberry"
-        },
-        {
-            "_id": "623804f3c73106f5de980efa",
-            "index": 1,
-            "guid": "5b56e9ab-6dd2-419b-86d1-45f74d4c3839",
-            "isActive": true,
-            "balance": "$2,421.41",
-            "picture": "http://placehold.it/32x32",
-            "age": 37,
-            "eyeColor": "green",
-            "name": "Tate Wood",
-            "gender": "male",
-            "company": "QUILK",
-            "email": "tatewood@quilk.com",
-            "phone": "+1 (808) 560-3031",
-            "address": "564 Pineapple Street, Washington, Colorado, 9908",
-            "about": "Mollit proident enim ipsum consequat ea do est ea. Commodo incididunt aute commodo ut adipisicing eiusmod consequat ut ut laborum magna. Minim nostrud Lorem in aliqua. Ut esse commodo officia mollit.\r\n",
-            "registered": "2015-01-17T02:22:20 -06:00",
-            "latitude": -41.218348,
-            "longitude": -107.443014,
-            "tags": [
-                "eu",
-                "incididunt",
-                "ea",
-                "sunt",
-                "magna",
-                "duis",
-                "veniam"
-            ],
-            "friends": [
-                {
-                    "id": 0,
-                    "name": "Shepherd Erickson"
-                },
-                {
-                    "id": 1,
-                    "name": "Frazier Clay"
-                },
-                {
-                    "id": 2,
-                    "name": "Mayra Myers"
-                }
-            ],
-            "greeting": "Hello, Tate Wood! You have 4 unread messages.",
-            "favoriteFruit": "strawberry"
-        },
-        {
-            "_id": "623804f31c4fd04e8dd345aa",
-            "index": 2,
-            "guid": "aef2df36-8562-430b-b367-fe6738a1c45c",
-            "isActive": false,
-            "balance": "$1,687.02",
-            "picture": "http://placehold.it/32x32",
-            "age": 30,
-            "eyeColor": "green",
-            "name": "Fry Fleming",
-            "gender": "male",
-            "company": "QUIZMO",
-            "email": "fryfleming@quizmo.com",
-            "phone": "+1 (990) 514-3140",
-            "address": "180 Stoddard Place, Marion, Virginia, 7822",
-            "about": "Pariatur velit laboris qui ut labore eu. Ut dolore veniam qui nisi ipsum nulla anim incididunt incididunt eu laboris eu deserunt. Laboris veniam do reprehenderit duis sit in magna. Sunt aliqua dolore ad culpa deserunt exercitation quis qui qui deserunt pariatur reprehenderit non.\r\n",
-            "registered": "2019-03-13T09:40:10 -06:00",
-            "latitude": 19.7524,
-            "longitude": -80.347933,
-            "tags": [
-                "officia",
-                "eu",
-                "eu",
-                "minim",
-                "ullamco",
-                "laborum",
-                "eu"
-            ],
-            "friends": [
-                {
-                    "id": 0,
-                    "name": "Shirley Berg"
-                },
-                {
-                    "id": 1,
-                    "name": "Hartman Lewis"
-                },
-                {
-                    "id": 2,
-                    "name": "Oconnor Booth"
-                }
-            ],
-            "greeting": "Hello, Fry Fleming! You have 5 unread messages.",
-            "favoriteFruit": "banana"
-        },
-        {
-            "_id": "623804f3ed73ad4e6ecf5754",
-            "index": 3,
-            "guid": "37d4b471-1710-4141-bbd6-f993cccded27",
-            "isActive": false,
-            "balance": "$1,604.87",
-            "picture": "http://placehold.it/32x32",
-            "age": 38,
-            "eyeColor": "green",
-            "name": "Gay Kim",
-            "gender": "male",
-            "company": "ZENSUS",
-            "email": "gaykim@zensus.com",
-            "phone": "+1 (957) 477-2337",
-            "address": "312 Kensington Street, Zarephath, California, 3300",
-            "about": "Est cupidatat nisi irure consectetur ex qui et est esse amet qui quis. Dolore reprehenderit culpa anim non. Sint non culpa excepteur veniam laborum officia et nostrud. Amet magna anim labore excepteur dolore cupidatat fugiat. Deserunt reprehenderit sunt ut magna.\r\n",
-            "registered": "2018-12-26T08:22:14 -06:00",
-            "latitude": -23.572104,
-            "longitude": -175.260698,
-            "tags": [
-                "officia",
-                "elit",
-                "minim",
-                "nulla",
-                "dolor",
-                "excepteur",
-                "do"
-            ],
-            "friends": [
-                {
-                    "id": 0,
-                    "name": "Kayla Floyd"
-                },
-                {
-                    "id": 1,
-                    "name": "Walls Glenn"
-                },
-                {
-                    "id": 2,
-                    "name": "Shaw Gibbs"
-                }
-            ],
-            "greeting": "Hello, Gay Kim! You have 8 unread messages.",
-            "favoriteFruit": "strawberry"
-        },
-        {
-            "_id": "623804f34d547c8c0645eb83",
-            "index": 4,
-            "guid": "4b25e2a6-e133-4573-ad03-d293e3b8e743",
-            "isActive": false,
-            "balance": "$2,896.70",
-            "picture": "http://placehold.it/32x32",
-            "age": 34,
-            "eyeColor": "brown",
-            "name": "Wolf Horne",
-            "gender": "male",
-            "company": "APPLIDECK",
-            "email": "wolfhorne@applideck.com",
-            "phone": "+1 (842) 558-3739",
-            "address": "325 Verona Place, Fredericktown, Maine, 7278",
-            "about": "Eiusmod incididunt enim commodo enim magna velit qui eiusmod ut Lorem id officia esse eu. Velit veniam fugiat labore exercitation non duis irure nulla proident laboris commodo duis qui. Enim minim cupidatat Lorem dolore reprehenderit magna. Reprehenderit cupidatat magna qui aute aute minim cillum ea ut. Labore ipsum velit tempor ex exercitation in Lorem laboris tempor ex esse cillum nisi officia.\r\n",
-            "registered": "2021-09-05T06:13:40 -06:00",
-            "latitude": -32.832782,
-            "longitude": -87.75673,
-            "tags": [
-                "mollit",
-                "duis",
-                "cillum",
-                "dolor",
-                "excepteur",
-                "fugiat",
-                "ex"
-            ],
-            "friends": [
-                {
-                    "id": 0,
-                    "name": "Sawyer Moon"
-                },
-                {
-                    "id": 1,
-                    "name": "Ingrid Mcintyre"
-                },
-                {
-                    "id": 2,
-                    "name": "Valdez Simmons"
-                }
-            ],
-            "greeting": "Hello, Wolf Horne! You have 5 unread messages.",
-            "favoriteFruit": "banana"
-        },
-        {
-            "_id": "623804f339f7779c97979a07",
-            "index": 5,
-            "guid": "3cb6d2f5-812f-41dc-a436-3e968e835cb0",
-            "isActive": false,
-            "balance": "$2,376.81",
-            "picture": "http://placehold.it/32x32",
-            "age": 25,
-            "eyeColor": "blue",
-            "name": "Ana Livingston",
-            "gender": "female",
-            "company": "VIDTO",
-            "email": "analivingston@vidto.com",
-            "phone": "+1 (983) 504-2767",
-            "address": "902 Kane Street, Harborton, Kansas, 8103",
-            "about": "Reprehenderit ut irure elit eu aute culpa Lorem commodo dolore reprehenderit. Do non aliquip adipisicing pariatur exercitation aliqua amet. Do enim elit cupidatat duis veniam cupidatat sunt. Proident velit pariatur veniam minim tempor anim qui sint voluptate velit.\r\n",
-            "registered": "2014-07-11T12:45:43 -06:00",
-            "latitude": 67.068513,
-            "longitude": 155.43213,
-            "tags": [
-                "aute",
-                "occaecat",
-                "quis",
-                "consectetur",
-                "minim",
-                "dolor",
-                "qui"
-            ],
-            "friends": [
-                {
-                    "id": 0,
-                    "name": "Deirdre Patterson"
-                },
-                {
-                    "id": 1,
-                    "name": "Audrey Morton"
-                },
-                {
-                    "id": 2,
-                    "name": "Marta Randolph"
-                }
-            ],
-            "greeting": "Hello, Ana Livingston! You have 8 unread messages.",
-            "favoriteFruit": "banana"
-        },
-        {
-            "_id": "623804f3999cd4b2ef5bd60d",
-            "index": 6,
-            "guid": "cc4cd874-f263-4d84-9da9-255ba2798566",
-            "isActive": false,
-            "balance": "$2,090.12",
-            "picture": "http://placehold.it/32x32",
-            "age": 31,
-            "eyeColor": "blue",
-            "name": "Huffman Nielsen",
-            "gender": "male",
-            "company": "ASSURITY",
-            "email": "huffmannielsen@assurity.com",
-            "phone": "+1 (894) 454-2926",
-            "address": "496 Jefferson Street, Blanford, Wisconsin, 1946",
-            "about": "Laboris sint amet fugiat sit et. Lorem elit qui consequat Lorem esse est id. Enim exercitation qui magna proident. Duis dolore quis qui laborum do in.\r\n",
-            "registered": "2016-12-20T03:15:42 -06:00",
-            "latitude": -30.020217,
-            "longitude": -168.390371,
-            "tags": [
-                "veniam",
-                "amet",
-                "laboris",
-                "proident",
-                "dolor",
-                "culpa",
-                "cillum"
-            ],
-            "friends": [
-                {
-                    "id": 0,
-                    "name": "May Bullock"
-                },
-                {
-                    "id": 1,
-                    "name": "Ella Nichols"
-                },
-                {
-                    "id": 2,
-                    "name": "Stokes Gilliam"
-                }
-            ],
-            "greeting": "Hello, Huffman Nielsen! You have 4 unread messages.",
-            "favoriteFruit": "strawberry"
-        }
-    ]
+import React from 'react';
+import Cosmetic from '../cosmetic_data/Cosmetic';
+const products = [
+    {
+        name: 'alta',
+        price: 200,
+        id: 1
+    },
+    {
+        name: 'nail-palish',
+        price: 300,
+        id: 2
+    },
+    {
+        name: 'lipstick',
+        price: 400,
+        id: 3
+    },
+    {
+        name: 'sonu',
+        price: 500,
+        id: 4
+    }
+
 ]
+const Cosmetices = () => {
+    return (
+        <div>
+            {
+                products.map(product => <Cosmetic name={product} key={product.id}></Cosmetic>)
+            }
+        </div>
+    );
+};
+
+export default Cosmetices;

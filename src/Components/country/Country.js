@@ -3,7 +3,7 @@ import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import './Country.css'
 
 const Country = (props) => {
-    console.log(props);
+    // console.log(props);
     const { name, area, region, flags, borders, population } = props.country
     return (
         <div>

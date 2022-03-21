@@ -15,7 +15,7 @@ const Countries = () => {
             <h2>Countries NAme </h2>
             <div className='countries text-center'>
                 {
-                    countries.map(country => <Country country={country}></Country>)
+                    countries.map(country => <Country key={country?.ccn3} country={country}></Country>)
                 }
             </div>
         </div>

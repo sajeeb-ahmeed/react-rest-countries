@@ -13,7 +13,7 @@ const ExternalUsers = () => {
         <div>
             <h2>Users  </h2>
             {
-                users.map(user => <Getuser name={user.name} email={user.email} address={user.address.city} company={user?.company?.catchPhrase}></Getuser>)
+                users.map(user => <Getuser key={user.id} name={user.name} email={user.email} address={user.address.city} company={user?.company?.catchPhrase}></Getuser>)
             }
         </div>
 
