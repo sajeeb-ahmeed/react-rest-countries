@@ -6,6 +6,7 @@ import ExternalUsers from './externalUsers/ExternalUsers';
 import Header from './header/Header';
 import Countries from './Components/countries/Countries';
 import Footer from './dist/footer/Footer';
+import Cosme_data1 from './dist/cosmetic_data/Cosme_data';
 
 const names = ' SaJeeb AHmeed ';
 const age = 25;
@@ -58,6 +59,7 @@ function App() {
       {/* <Count> </Count> */}
       <Header></Header>
       <ExternalUsers></ExternalUsers>
+      <Cosme_data1></Cosme_data1>
       <Countries></Countries>
 
       <Footer></Footer>
